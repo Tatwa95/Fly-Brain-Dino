@@ -6,13 +6,13 @@
 
 | Detail | Description |
 |---|---|
-| Project | Fly-Brain Dino |
+| Project | Fly Brain Dino |
 | Format | Prototype study and thesis style technical write up |
 | Status | Preliminary implementation; no formal behavioural evaluation completed |
 
 ## Abstract
 
-This project explores a simple question: can a simulated, fruit fly inspired neural network be connected to the Chrome dinosaur game, and what can such a prototype teach a computer science student about perception, learning, and action? Fly-Brain Dino combines a two dimensional Pygame game with a leaky integrate and fire network. A hand written coach supplies jump and duck labels, and a trainable linear readout learns to imitate those labels. The interface provides human play, coach learning, and neural control modes, alongside a visualization of activity over a fruit fly brain image.
+This project explores a simple question: can a simulated, fruit fly inspired neural network be connected to the Chrome dinosaur game, and what can such a prototype teach a computer science student about perception, learning, and action? Fly Brain Dino combines a two dimensional Pygame game with a leaky integrate and fire network. A hand written coach supplies jump and duck labels, and a trainable linear readout learns to imitate those labels. The interface provides human play, coach learning, and neural control modes, alongside a visualization of activity over a fruit fly brain image.
 
 The prototype uses synthetic network wiring by default. Although its design is inspired by TuragaLab's FlyBody project and the MaleCNS connectome research, it does not currently load FlyBody, run MuJoCo, or use the official MaleCNS connection graph in its standard configuration. The project is therefore best understood as an educational simulation, not a biologically faithful fly or a validated connectome model. A basic startup check confirmed that the saved readout weights load and the neural simulation advances; no controlled performance study has yet been conducted.
 
@@ -43,13 +43,13 @@ How can a simple spiking network be connected to a familiar game to help a stude
 
 [FlyBody](https://github.com/TuragaLab/flybody) is a fruit fly body model for MuJoCo and locomotion tasks. Its repository describes development in collaboration between Google DeepMind and HHMI Janelia Research Campus. [MuJoCo](https://github.com/google-deepmind/mujoco) is the physics engine associated with that work.
 
-Fly-Brain Dino currently has a separate Pygame implementation. The game does not load FlyBody's model files or use MuJoCo physics. FlyBody is credited as project inspiration, not as an integrated dependency.
+Fly Brain Dino currently has a separate Pygame implementation. The game does not load FlyBody's model files or use MuJoCo physics. FlyBody is credited as project inspiration, not as an integrated dependency.
 
 ### 3.2 MaleCNS connectome
 
 The [MaleCNS Connectome Project](https://male-cns.janelia.org/) provides access to the reconstructed male fruit fly central nervous system data. The project credits a collaboration involving FlyEM at HHMI Janelia, the University of Cambridge, the MRC Laboratory of Molecular Biology, and Google Research.
 
-Fly-Brain Dino's standard configuration does not use the official graph. Its default connections are generated synthetically. The code includes an optional loader for a prepared NPZ graph with `pre`, `post`, and `weight` arrays and an optional `sign` array. The repository does not include an official MaleCNS graph export or a conversion workflow for the source data.
+Fly Brain Dino's standard configuration does not use the official graph. Its default connections are generated synthetically. The code includes an optional loader for a prepared NPZ graph with `pre`, `post`, and `weight` arrays and an optional `sign` array. The repository does not include an official MaleCNS graph export or a conversion workflow for the source data.
 
 ## 4. System design
 
@@ -134,7 +134,7 @@ The most important interpretive risk is overclaiming from surface similarities. 
 
 ## 11. Conclusion
 
-Fly-Brain Dino is a curiosity driven computer science prototype that connects a simplified spiking network to a familiar game. The coach guided readout demonstrates one way to map game features to actions and makes the process observable. Its current value is educational and exploratory. It does not yet demonstrate an official MaleCNS connectome controlling a FlyBody model, nor does it provide evidence about biological fly behavior.
+Fly Brain Dino is a curiosity driven computer science prototype that connects a simplified spiking network to a familiar game. The coach guided readout demonstrates one way to map game features to actions and makes the process observable. Its current value is educational and exploratory. It does not yet demonstrate an official MaleCNS connectome controlling a FlyBody model, nor does it provide evidence about biological fly behavior.
 
 The clearest next step is a repeatable evaluation of the existing controller. A separate, carefully documented effort would be required to import the official MaleCNS connectivity or integrate FlyBody with MuJoCo.
 

@@ -1,5 +1,5 @@
 """
-FLY-BRAIN DINO
+FLY BRAIN DINO
 ==============
 Chrome's dinosaur game played by a simulated fruit-fly brain (166,700 neurons).
 
@@ -80,14 +80,14 @@ def bar(surf, x, y, w, h, value, label, color, f):
 def main():
     args = parse()
     pygame.init()
-    pygame.display.set_caption("Fly-Brain Dino  -  a fruit fly connectome plays the Chrome dinosaur game")
+    pygame.display.set_caption("Fly Brain Dino | Neural simulation of the Chrome dinosaur game")
     screen = pygame.display.set_mode((WIN_W, WIN_H))
     clock = pygame.time.Clock()
     f_small, f_med, f_big, f_score = font(13), font(15), font(20), font(26)
 
     def splash(msg):
         screen.fill(BG)
-        draw_text(screen, "FLY-BRAIN DINO", (WIN_W // 2 - 120, WIN_H // 2 - 50), f_big, CYAN)
+        draw_text(screen, "FLY BRAIN DINO", (WIN_W // 2 - 120, WIN_H // 2 - 50), f_big, CYAN)
         draw_text(screen, msg, (WIN_W // 2 - 260, WIN_H // 2), f_med, TXT)
         pygame.display.flip()
         pygame.event.pump()

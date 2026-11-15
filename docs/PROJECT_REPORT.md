@@ -1,12 +1,12 @@
 # Project Report
 
-## Fly-Brain Dino
+## Fly Brain Dino
 
 **A CS student's curiosity project about a simulated fruit fly brain playing Chrome Dino**
 
 ## Executive summary
 
-Fly-Brain Dino is a desktop project that combines a Chrome style dinosaur game with a simulated neural network. It began as a computer science student's curiosity about whether a fruit fly inspired brain simulation could react to a familiar game. A hand written coach demonstrates jump and duck actions. A trainable readout learns to imitate the coach and can then control the game.
+Fly Brain Dino is a desktop project that combines a Chrome style dinosaur game with a simulated neural network. It began as a computer science student's curiosity about whether a fruit fly inspired brain simulation could react to a familiar game. A hand written coach demonstrates jump and duck actions. A trainable readout learns to imitate the coach and can then control the game.
 
 The software is an educational prototype. Its default network wiring is synthetic, and its game is built with Pygame CE. It does not currently use the official MaleCNS connection graph, the FlyBody model, or MuJoCo physics.
 
@@ -81,7 +81,7 @@ This check confirms basic initialization only. It does not measure how well the 
 
 ## Conclusion
 
-Fly-Brain Dino turns a student's curiosity into a working interactive prototype. Its main value is educational: it makes a simple perception, neural activity, and action loop visible. It also demonstrates why using a connectome image or neuron count is not the same as running a connectome. Clear data integration and controlled evaluation are the next steps toward stronger claims.
+Fly Brain Dino turns a student's curiosity into a working interactive prototype. Its main value is educational: it makes a simple perception, neural activity, and action loop visible. It also demonstrates why using a connectome image or neuron count is not the same as running a connectome. Clear data integration and controlled evaluation are the next steps toward stronger claims.
 
 ## References
 
