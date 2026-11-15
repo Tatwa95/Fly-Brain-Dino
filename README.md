@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Fly-Brain Dino
 
 **A fruit-fly-inspired neural network learns to play a Chrome-style dinosaur game.**
