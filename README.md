@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fly-Brain Dino
 
 **A fruit-fly-inspired neural network learns to play a Chrome-style dinosaur game.**
@@ -157,3 +158,6 @@ The upstream repositories and connectome dataset retain their own licenses and a
 ## License
 
 No license has been added for this project yet. Add a license before inviting others to reuse or redistribute this repository. The upstream FlyBody code and MaleCNS data have separate licenses; see their respective project pages.
+=======
+# Fly-Brain-Dino
+>>>>>>> 0877b01f0dbd7c56e49a2e87adb3220e65d6324e
