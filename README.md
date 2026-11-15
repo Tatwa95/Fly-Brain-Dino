@@ -1,4 +1,4 @@
-# Fly-Brain Dino
+# Fly Brain Dino
 
 **A CS student's curiosity project: can a simulated fruit fly brain learn to play Chrome Dino?**
 
